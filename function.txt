@@ -1,1 +1,15 @@
-
+/*this is part function in sql*/
+select count(id_person) from person;
+select max(id_person) from person;
+select min(code_meli) from person;
+select concat(name,family) from person;
+select replace(name,'a','e') from person;
+select *from person where id_person>1 and id_person<3;
+select *from person order by code_meli desc;
+select *from person order by code_meli asc;
+select *from person where name like '%s%';
+select *from person where name like 'a%';
+select top 2* from person;
+select top 2* from person order by code_meli asc;
+select top 2* from person order by code_meli desc;
+/*finish function*/
